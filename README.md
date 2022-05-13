@@ -10,7 +10,7 @@ A collection of Data Structures and Algorithms implemented in C++ (closely follo
 * Counting Sort
 * Radix Sort
 * Bucket Sort
-* $n^{th}$ order statistics (Finding Median in O(n) time)
+* nth order statistics (Finding Median in O(n) time)
 * Stack
 * Queue
 * Linked Lists 
