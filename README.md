@@ -3,6 +3,7 @@ A collection of Data Structures and Algorithms implemented in C++ (closely follo
 
 ## Expected List of Implementations : - 
 * Insertion Sort
+* Merge Sort
 * Strassen's algorithm for matrix multiplication
 * Heap Sort
 * Priority Queues
