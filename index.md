@@ -40,5 +40,10 @@ class Bulb
 };
 ```
 
+## Passing Parameters 
+
+**Pass by value** - By default, all parameters passed, are passed-by-value. This means, a separate copy is created inside the called method and none of the changes made in this method will be reflected in the calling method. 
+
+**Pass by reference** - We can pass by reference by using the "&" operator. 
 
 
