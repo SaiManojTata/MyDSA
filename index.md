@@ -1,37 +1,44 @@
-## Welcome to GitHub Pages
+# Revising concepts of C++
 
-You can use the [editor on GitHub](https://github.com/SaiManojTata/MyDSA/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Basics 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+int main(int argc, char* argv[])
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+argc **(Argument Count)** - Stores the number of arguments on the command line passed by the user 
 
-### Jekyll Themes
+argv - Array of character pointers which lists all the arguments passed
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/SaiManojTata/MyDSA/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+std::cout - Defined in iostream header file (predefined)
 
-### Support or Contact
+## OOP
+OOP stands for Obejct-Oriented Programming.
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+* Object is an entity with state and behavior. 
+* Software objects are just like real-world objects. 
+* They have **state** in the form of variables called fields, and in the form of member functions called methods. 
+
+* Hiding internal details (state) of the object and the actions being performed by the methods is known as **data-encapsulation**. 
+* A class is a prototype of objects. An object is an instance of class. 
+* Example: - Human is a class of living being and a person Sam is an instance of the class Human 
+
+```
+class Bulb
+{
+  private:
+  // Instance Variables
+    bool isOn;
+  
+  public:
+  // Constructor
+    Bulb();
+  // Instance Method
+    virtual void turnOn();
+  // Instance Method
+    virtual void turnOff();
+};
+```
+
+
+
