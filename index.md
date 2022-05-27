@@ -72,3 +72,16 @@ Avoid confusion!
 
 A const member function does not mutate the object. It only inspects the object. 
 Const member functions are indicated by adding the keyword ```const``` as a suffix. 
+
+## Types of Variables 
+
+* Instance Variables : Unique to each instance/object of a class 
+* Class Variables : It is any field with a ```static``` modifier. There is exactly one copy of these variables regardless of how many instances of how many instances of the class are created. 
+* Local Variables : Temporary variables in a method are called local variables. Only visible in the method in which they are declared. 
+
+## Methods 
+
+* Class Methods : Used to create class methods (should be invoked with the class name without                     the need to create even a single instance of the class)
+* Instance Methods : Can only be invoked over an instance of a class
+* Constructor : Invoked over objects when they are created 
+* Destructor : Invoked over object when they are destroyed
