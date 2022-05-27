@@ -85,3 +85,29 @@ Const member functions are indicated by adding the keyword ```const``` as a suff
 * Instance Methods : Can only be invoked over an instance of a class
 * Constructor : Invoked over objects when they are created 
 * Destructor : Invoked over object when they are destroyed
+
+## Access Modifiers 
+
+* *Private* - visibility only within its own class 
+* *Public* - visibility to all the classes in the package
+* *Protected* - visibility within its own class and the subclasses its own class 
+
+## Abstract Class 
+
+An abstract class is a class that is designed to be specifically used as a base class. An abstract class contains at least one pure virtual function. You declare a pure virtual function by using a pure specifier (= 0) in the declaration of a virtual member function in the class declaration.
+
+```
+class Test {
+public:
+  virtual void f() = 0;
+};
+```
+
+Test::f is a pure virtual function. A functional declaration cannot have both a pure specifier and a definition. 
+
+```
+struct A {
+  virtual void g() { } = 0; // this is not allowed by the compiler
+};
+```
+
