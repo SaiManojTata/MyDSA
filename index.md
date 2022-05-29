@@ -114,4 +114,5 @@ struct A {
 A pure virtual function is a function with no definition. Using an abstract class makes code reusable (for example, area of a shape can be defined as 
 ```virtual float Area() = 0``` in an abstract class, and other classes like Rectangle, Triangle can have their own implementations of this function area). 
 
+Return type of virtual functions must be consistent throughout all of its implementing classes. 
 
