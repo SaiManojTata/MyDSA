@@ -96,23 +96,54 @@ Const member functions are indicated by adding the keyword ```const``` as a suff
 
 An abstract class is a class that is designed to be specifically used as a base class. An abstract class contains at least one pure virtual function. You declare a pure virtual function by using a pure specifier (= 0) in the declaration of a virtual member function in the class declaration.
 
-```
+~~~~
 class Test {
 public:
   virtual void f() = 0;
 };
-```
+~~~~
 
 Test::f is a pure virtual function. A functional declaration cannot have both a pure specifier and a definition. 
 
-```
+~~~~
 struct A {
   virtual void g() { } = 0; // this is not allowed by the compiler
 };
-```
+~~~~
 
 A pure virtual function is a function with no definition. Using an abstract class makes code reusable (for example, area of a shape can be defined as 
 ```virtual float Area() = 0``` in an abstract class, and other classes like Rectangle, Triangle can have their own implementations of this function area). 
 
 Return type of virtual functions must be consistent throughout all of its implementing classes. 
+
+## Relationship 
+
+1. Dependency : Objects of one-class use objects of another class temporarily. 
+
+2. Association: Objects of one class work with objects of another class for some amount of time. 
+
+3. Aggregation: When a class stores the pointer of another class inside it, just a pointer is kept inside the class 
+
+4. Composition: One class containts objects of another class
+
+5. Inheritance: One class is a sub-type of another class 
+
+Example 
+
+~~~~
+class Tree
+{
+  private:
+  class Node
+  {
+    private:
+      int key_value = 0;
+      Node *left;
+      Node *right;
+  };
+  
+  Node *root;
+};
+~~~~
+
 
