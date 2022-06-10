@@ -2,6 +2,7 @@
 A collection of Data Structures and Algorithms implemented in C++ (closely following Introduction to Algorithms, 3rd ed.)
 
 ## Expected List of Implementations : - 
+Part - 1
 * Insertion Sort
 * Merge Sort
 * Strassen's algorithm for matrix multiplication
@@ -12,6 +13,8 @@ A collection of Data Structures and Algorithms implemented in C++ (closely follo
 * Radix Sort
 * Bucket Sort
 * n-th order statistics (Finding Median in O(n) time)
+
+Part - 2
 * Stack
 * Queue
 * Linked Lists 
@@ -21,6 +24,8 @@ A collection of Data Structures and Algorithms implemented in C++ (closely follo
 * Dynamic Programming 
 * Greedy Algorithms
 * B-trees
+
+Part - 3
 * Breadth First Search 
 * Depth First Search
 * Topological Sort
